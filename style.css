@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  box-sizing: border-box;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(214, 217, 223, 0.4);
+}
+header h1 {
+  margin-left: 15px;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #A55C30;
+  font-style: italic;
+}
+header h1 span {
+  font-weight: 700;
+  font-style: normal;
+}
+
+#intro {
+  position: relative;
+}
+#intro p {
+  margin: 48px auto auto 31px;
+  width: 229px;
+  height: 164px;
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  color: #232730;
+  border-left: 9px solid #F8D7A4;
+  padding-left: 20px;
+  position: absolute;
+}
+#intro img {
+  margin-top: 113px;
+}
+
+#about {
+  padding: 10px 16px 110px 16px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#about img {
+  width: 344px;
+  height: 267px;
+}
+#about h2 {
+  margin-top: 20px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #A55C30;
+}
+#about p {
+  box-sizing: border-box;
+  padding: 15px;
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#services {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91)), url(/imgs/esportivo2.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  box-sizing: border-box;
+  padding: 36px;
+  row-gap: 50px;
+}
+#services .service_img {
+  width: 700px;
+  left: -900px;
+  position: absolute;
+  z-index: 5;
+}
+#services h3 {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  color: #A55C30;
+  text-align: center;
+}
+
+.service {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-rows: repeat(3, auto);
+  box-sizing: border-box;
+  padding: 1rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.service img {
+  justify-self: center;
+  width: 54px;
+  height: 54px;
+}
+.service h4 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+.service p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
