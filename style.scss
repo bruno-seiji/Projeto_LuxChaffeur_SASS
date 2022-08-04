@@ -1,7 +1,19 @@
+// Glider.js
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import '../Projeto_LuxChaffeur_SASS/Abstract/glider_adjust' ;
+
+// Sections
 @import '../Projeto_LuxChaffeur_SASS/Abstract/reset';
 @import '../Projeto_LuxChaffeur_SASS/Abstract/base';
 @import '../Projeto_LuxChaffeur_SASS/Sections/header';
 @import '../Projeto_LuxChaffeur_SASS/Sections/intro';
 @import '../Projeto_LuxChaffeur_SASS/Sections/about';
 @import '../Projeto_LuxChaffeur_SASS/Sections/services';
+@import '../Projeto_LuxChaffeur_SASS/Sections/fleet';
+
+
+
+// Components
 @import '../Projeto_LuxChaffeur_SASS/Components/service' ;
+@import '../Projeto_LuxChaffeur_SASS/Components/card' ;

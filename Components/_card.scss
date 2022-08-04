@@ -1,0 +1,21 @@
+.card {
+  background-color:white;
+  box-sizing: border-box;
+  color: black;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(5, auto);
+  justify-content: center;
+  text-align: center;
+  box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 23px;
+  width: 283.5px;
+  height: 351px;
+  justify-self: center;
+  align-items: center;
+}
+
+.span_2{
+  grid-column: span 2;
+}
+
