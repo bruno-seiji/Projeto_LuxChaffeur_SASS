@@ -1,10 +1,11 @@
 #fleet{
   width: 100%;
-  height: 400px;
+  height: auto;
   background-color: white;
   box-sizing: border-box;
   display: grid;
-  h3 {
+  padding-bottom: 20px;
+  h2 {
     font-family: 'Lora';
     font-weight: 700;
     font-size: 32px;

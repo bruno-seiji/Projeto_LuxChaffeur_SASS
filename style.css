@@ -143,45 +143,6 @@
   cursor: -webkit-grabbing;
 }
 
-.glide__bullets .glide__bullet--active {
-  background-color: #F8D7A4;
-}
-
-.glide__bullets .glide__bullet {
-  width: 11px;
-  height: 11px;
-}
-
-.glide__bullets {
-  gap: 1rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: static;
-  z-index: 0;
-  bottom: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-  transform: none;
-}
-
-.glide__bullet {
-  margin: 0;
-  background-color: #E5E5E5;
-}
-
-.glide__slide {
-  display: flex;
-  justify-content: center;
-}
-
-.glide {
-  display: grid;
-  gap: 35px;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -230,6 +191,45 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.glide__bullets .glide__bullet--active {
+  background-color: #F8D7A4;
+}
+
+.glide__bullets .glide__bullet {
+  width: 11px;
+  height: 11px;
+}
+
+.glide__bullets {
+  gap: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: static;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  transform: none;
+}
+
+.glide__bullet {
+  margin: 0;
+  background-color: #E5E5E5;
+}
+
+.glide__slide {
+  display: flex;
+  justify-content: center;
+}
+
+.glide {
+  display: grid;
+  gap: 35px;
 }
 
 header {
@@ -319,7 +319,7 @@ header h1 span {
   position: absolute;
   z-index: 6;
 }
-#services h3 {
+#services h2 {
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
@@ -331,12 +331,13 @@ header h1 span {
 
 #fleet {
   width: 100%;
-  height: 400px;
+  height: auto;
   background-color: white;
   box-sizing: border-box;
   display: grid;
+  padding-bottom: 20px;
 }
-#fleet h3 {
+#fleet h2 {
   font-family: "Lora";
   font-weight: 700;
   font-size: 32px;
@@ -360,6 +361,19 @@ header h1 span {
 
 .glide {
   margin-bottom: 94px;
+}
+
+.testimonials {
+  box-sizing: border-box;
+  background-color: #F8D7A4;
+  padding: 36px 27px 140px 27px;
+}
+.testimonials h2 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #A55C30;
+  text-align: center;
 }
 
 .service {
@@ -436,4 +450,14 @@ header h1 span {
 }
 .numbers .txt {
   font-size: 16px;
+}
+
+.testimonial {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 55px 50px 20px 50px;
+}
+
+section {
+  position: static;
 }/*# sourceMappingURL=style.css.map */

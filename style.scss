@@ -1,21 +1,27 @@
 // Glider.js
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
-@import '../Projeto_LuxChaffeur_SASS/Abstract/glider_adjust' ;
+
+// bases
+@import '../Projeto_LuxChaffeur_SASS/imports/Abstract/reset';
+@import '../Projeto_LuxChaffeur_SASS/imports/Abstract/glider_adjust' ;
+@import '../Projeto_LuxChaffeur_SASS/imports/Abstract/base';
 
 // Sections
-@import '../Projeto_LuxChaffeur_SASS/Abstract/reset';
-@import '../Projeto_LuxChaffeur_SASS/Abstract/base';
-@import '../Projeto_LuxChaffeur_SASS/Sections/header';
-@import '../Projeto_LuxChaffeur_SASS/Sections/intro';
-@import '../Projeto_LuxChaffeur_SASS/Sections/about';
-@import '../Projeto_LuxChaffeur_SASS/Sections/services';
-@import '../Projeto_LuxChaffeur_SASS/Sections/fleet';
-
-
-
+@import '../Projeto_LuxChaffeur_SASS/imports/Sections/header';
+@import '../Projeto_LuxChaffeur_SASS/imports/Sections/intro';
+@import '../Projeto_LuxChaffeur_SASS/imports/Sections/about';
+@import '../Projeto_LuxChaffeur_SASS/imports/Sections/services';
+@import '../Projeto_LuxChaffeur_SASS/imports/Sections/fleet';
+@import '../Projeto_LuxChaffeur_SASS/imports/Sections/testimonials';
 
 // Components
-@import '../Projeto_LuxChaffeur_SASS/Components/service' ;
-@import '../Projeto_LuxChaffeur_SASS/Components/card' ;
-@import '../Projeto_LuxChaffeur_SASS/Components/numbers' ;
+@import '../Projeto_LuxChaffeur_SASS/imports/Components/service' ;
+@import '../Projeto_LuxChaffeur_SASS/imports/Components/card' ;
+@import '../Projeto_LuxChaffeur_SASS/imports/Components/numbers' ;
+@import '../Projeto_LuxChaffeur_SASS/imports/Components/testimonial' ;
+
+
+section {
+  position: static;
+}
