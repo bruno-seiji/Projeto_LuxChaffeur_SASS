@@ -1,7 +1,9 @@
-.testimonials {
+#testimonials {
   box-sizing: border-box;
   background-color: #F8D7A4;
   padding: 36px 27px 140px 27px;
+  display: grid;
+  gap: 72px;
 
   h2 {
     font-family: 'Lora', serif;

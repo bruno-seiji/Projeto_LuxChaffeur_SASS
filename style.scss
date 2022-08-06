@@ -3,9 +3,9 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 // bases
-@import '../Projeto_LuxChaffeur_SASS/imports/Abstract/reset';
-@import '../Projeto_LuxChaffeur_SASS/imports/Abstract/glider_adjust' ;
-@import '../Projeto_LuxChaffeur_SASS/imports/Abstract/base';
+@import '../Projeto_LuxChaffeur_SASS/imports/Base/reset';
+@import '../Projeto_LuxChaffeur_SASS/imports/Base/glider_adjust' ;
+@import '../Projeto_LuxChaffeur_SASS/imports/Base/base';
 
 // Sections
 @import '../Projeto_LuxChaffeur_SASS/imports/Sections/header';
@@ -20,8 +20,3 @@
 @import '../Projeto_LuxChaffeur_SASS/imports/Components/card' ;
 @import '../Projeto_LuxChaffeur_SASS/imports/Components/numbers' ;
 @import '../Projeto_LuxChaffeur_SASS/imports/Components/testimonial' ;
-
-
-section {
-  position: static;
-}

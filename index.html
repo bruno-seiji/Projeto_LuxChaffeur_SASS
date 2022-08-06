@@ -154,24 +154,62 @@
       </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials">
       <h2>Testominials</h2>
-      <div class="glide">
+      <div class="glide2">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
-            <div class="testimonial">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
-                dui nec massa enim scelerisque scelerisque maecenas lectus.
-                Tincidunt posuere nunc at amet, in. Enim ullamcorper lectus
-                viverra donec. At faucibus nunc vel viverra massa malesuada leo
-                iaculis tellus.
-              </p>
-              <div class="stars"></div>
-              <img src="" alt="" />
-              <p class="name"></p>
-              <p class="city"></p>
-            </div>
+            <li class="glide__slide">
+              <div class="testimonial">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mattis dui nec massa enim scelerisque scelerisque maecenas
+                  lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper
+                  lectus viverra donec. At faucibus nunc vel viverra massa
+                  malesuada leo iaculis tellus.
+                </p>
+                <div class="stars">
+                  <img src="/imgs/testimonial_stars.svg" alt="" srcset="" />
+                </div>
+                <img src="/imgs/perfil-de-usuario.png" alt="" />
+                <p class="name">Name 1</p>
+                <p class="city">City 1</p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="testimonial">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mattis dui nec massa enim scelerisque scelerisque maecenas
+                  lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper
+                  lectus viverra donec. At faucibus nunc vel viverra massa
+                  malesuada leo iaculis tellus.
+                </p>
+                <div class="stars">
+                  <img src="/imgs/testimonial_stars.svg" alt="" srcset="" />
+                </div>
+                <img src="/imgs/perfil-de-usuario.png" alt="" />
+                <p class="name">Name 2</p>
+                <p class="city">City 2</p>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="testimonial">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mattis dui nec massa enim scelerisque scelerisque maecenas
+                  lectus. Tincidunt posuere nunc at amet, in. Enim ullamcorper
+                  lectus viverra donec. At faucibus nunc vel viverra massa
+                  malesuada leo iaculis tellus.
+                </p>
+                <div class="stars">
+                  <img src="/imgs/testimonial_stars.svg" alt="" srcset="" />
+                </div>
+                <img src="/imgs/perfil-de-usuario.png" alt="" />
+                <p class="name">Name 3</p>
+                <p class="city">City 3</p>
+              </div>
+            </li>
           </ul>
         </div>
 
@@ -182,9 +220,11 @@
         </div>
       </div>
     </section>
-    <script src="/glide.js"></script>
+
+    <script src="/imports/scripts/glide.js"></script>
     <script>
       new Glide('.glide').mount()
+      new Glide('.glide2').mount()
     </script>
   </body>
 </html>
