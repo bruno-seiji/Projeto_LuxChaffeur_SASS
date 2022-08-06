@@ -19,3 +19,14 @@
   grid-column: span 2;
 }
 
+.seats::before {
+  content: url(/imgs/num_people.svg);
+  margin-right: 12px;
+}
+
+.luggage::before {
+  content: url(/imgs/luggage.svg);
+  margin-right: 12px;
+}
+
+
