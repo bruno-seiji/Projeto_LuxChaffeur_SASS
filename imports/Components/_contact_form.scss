@@ -1,7 +1,11 @@
 #contact {
   h3 {
-    text-align: center  
-  };
+    text-align: center ;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 32px;
+    color: #A55C30;
+  }
 
   form{
     display: grid;
@@ -10,12 +14,33 @@
     box-sizing: border-box;
     padding: 32px 16px;
     gap: 12px;
-    input {
+
+    input,textarea {
       height: 48px;
       border: 0;
       padding-left: 25px;
+      font-family: 'Lato';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
     }
-    ::placeholder {
+
+    input::-webkit-calendar-picker-indicator {
+      opacity: 100;
+      background: url(/imgs/arrow_input.svg);
+      background-repeat: no-repeat;
+      color: rgba(0, 0, 0, 0);
+      margin-top: 20px;
+   }
+    .form_details{
+      padding-top: 40px;
+      box-sizing: border-box;
+   }
+    .form_details::placeholder{
+      position: absolute;
+      top: 40px;
+   }
+     ::placeholder {
        opacity: 0.6;
     }
     button{

@@ -541,6 +541,10 @@ header h1 span {
 
 #contact h3 {
   text-align: center;
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 32px;
+  color: #A55C30;
 }
 #contact form {
   display: grid;
@@ -550,10 +554,37 @@ header h1 span {
   padding: 32px 16px;
   gap: 12px;
 }
-#contact form input {
+#contact form input, #contact form textarea {
   height: 48px;
   border: 0;
   padding-left: 25px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+#contact form input::-webkit-calendar-picker-indicator {
+  opacity: 100;
+  background: url(/imgs/arrow_input.svg);
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0);
+  margin-top: 20px;
+}
+#contact form .form_details {
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+#contact form .form_details::-moz-placeholder {
+  position: absolute;
+  top: 40px;
+}
+#contact form .form_details:-ms-input-placeholder {
+  position: absolute;
+  top: 40px;
+}
+#contact form .form_details::placeholder {
+  position: absolute;
+  top: 40px;
 }
 #contact form ::-moz-placeholder {
   opacity: 0.6;

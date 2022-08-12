@@ -97,33 +97,33 @@
                   Praesent ut eu tellus cursus faucibus duis hendrerit volutpat
                 </p>
                 <p class="seats">4 Seats</p>
-                <p class="luggage">Luggage</p>
+                <p class="luggage">2 Luggage</p>
               </div>
             </li>
             <li class="glide__slide">
               <div class="card">
-                <img class="span_2" src="/imgs/car_1.svg" alt="" />
-                <h4 class="span_2">BUSINESS CLASS</h4>
-                <p class="span_2">Mercedes G - wagon</p>
+                <img class="span_2" src="/imgs/car_2.svg" alt="" />
+                <h4 class="span_2">FIRST CLASS</h4>
+                <p class="span_2">Mercedes maybach s600</p>
                 <p class="span_2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Praesent ut eu tellus cursus faucibus duis hendrerit volutpat
                 </p>
                 <p class="seats">4 Seats</p>
-                <p class="luggage">Luggage</p>
+                <p class="luggage">2 Luggage</p>
               </div>
             </li>
             <li class="glide__slide">
               <div class="card">
-                <img class="span_2" src="/imgs/car_1.svg" alt="" />
-                <h4 class="span_2">BUSINESS CLASS</h4>
-                <p class="span_2">Mercedes G - wagon</p>
+                <img class="span_2" src="/imgs/car_3.svg" alt="" />
+                <h4 class="span_2">SUV</h4>
+                <p class="span_2">Mercedes M class</p>
                 <p class="span_2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Praesent ut eu tellus cursus faucibus duis hendrerit volutpat
                 </p>
                 <p class="seats">4 Seats</p>
-                <p class="luggage">Luggage</p>
+                <p class="luggage">2 Luggage</p>
               </div>
             </li>
           </ul>
@@ -224,13 +224,31 @@
     <section id="contact">
       <h3>Contact</h3>
       <form action="">
-        <input type="text" class="form_name" placeholder="Your Name"/>
-        <input type="text" class="form_email" placeholder="Email"/>
-        <input type="text" class="form_typecar" placeholder="Type of car"/>
-        <input type="text" class="form_details" placeholder="Your Details"/>
+        <input type="text" class="form_name" placeholder="Your Name" />
+        <input type="text" class="form_email" placeholder="Email" />
+        <input
+          type="text"
+          class="form_typecar"
+          placeholder="Type of car"
+          list="type_car"
+        />
+        <datalist id="type_car">
+          <option value="BUSINESS CLASS"></option>
+          <option value="FIRST CLASS"></option>
+          <option value="SUV"></option>
+        </datalist>
+        <textarea
+          class="form_details"
+          name="w3review"
+          rows="4"
+          cols="50"
+          placeholder="Your Details"
+        ></textarea>
         <button>Send</button>
       </form>
     </section>
+
+    <footer></footer>
 
     <script src="/imports/scripts/glide.js"></script>
     <script>
