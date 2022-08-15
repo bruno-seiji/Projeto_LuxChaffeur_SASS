@@ -1,3 +1,5 @@
+@import '../Components/button' ;
+
 #contact {
   h3 {
     text-align: center ;
@@ -40,21 +42,10 @@
       position: absolute;
       top: 40px;
    }
-     ::placeholder {
-       opacity: 0.6;
-    }
-    button{
-      width: 161px;
-      height: 60px;
-      justify-self: center;
-      background: #A55C30;
-      color: white;
-      font-family: 'Lato';
-      font-weight: 700;
-      font-size: 18px;
-      border: 0;
-      text-transform: uppercase;
-    }
+   ::placeholder {
+    opacity: 0.6;
+ }
+
     .form_details {
       height: 204px;
     }

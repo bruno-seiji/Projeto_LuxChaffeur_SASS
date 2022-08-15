@@ -261,6 +261,10 @@ table {
   gap: 33px;
 }
 
+body {
+  background-color: black;
+}
+
 header {
   background-color: #E5E5E5;
   display: flex;
@@ -419,37 +423,157 @@ header h1 span {
   padding: 64px 0 50px 0;
 }
 
+button {
+  width: 161px;
+  height: 60px;
+  justify-self: center;
+  background: #A55C30;
+  color: white;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  border: 0;
+  text-transform: uppercase;
+}
+
 footer {
-  width: 100%;
   background-color: black;
-  display: grid;
-  justify-content: center;
   color: white;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
-  row-gap: 88px;
 }
-footer h2 {
-  margin-left: 15px;
+footer .footer_container {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  row-gap: 88px;
+  box-sizing: border-box;
+  padding: 40px 0 25px 0;
+}
+footer .footer_container .footer_start h2 {
   font-family: "Lora", serif;
   font-weight: 400;
   font-size: 32px;
   color: #A55C30;
   font-style: italic;
 }
-footer h2 span {
+footer .footer_container .footer_start h2 span {
   font-weight: 700;
   font-style: normal;
 }
-footer p {
+footer .footer_container .footer_start p {
   font-weight: 300;
   font-size: 16px;
   width: 250px;
+  margin: auto;
+  margin-top: 18px;
+  line-height: 20px;
 }
-footer .news_letter h3 {
+footer .footer_container .news_letter {
+  display: grid;
+  row-gap: 20px;
+}
+footer .footer_container .news_letter h3 {
   font-weight: 600;
   font-size: 24px;
   color: #A55C30;
+  margin-bottom: 12px;
+}
+footer .footer_container .news_letter p {
+  width: 300px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  justify-self: center;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  font-style: normal;
+}
+footer .footer_container .news_letter input {
+  justify-self: center;
+  height: 54px;
+  width: 270px;
+  padding-left: 20px;
+}
+footer .footer_container .news_letter ::-moz-placeholder {
+  opacity: 0.6;
+}
+footer .footer_container .news_letter :-ms-input-placeholder {
+  opacity: 0.6;
+}
+footer .footer_container .news_letter ::placeholder {
+  opacity: 0.6;
+}
+footer .footer_container .news_letter button {
+  height: 54px;
+  width: 135px;
+  text-transform: none;
+}
+footer .footer_container .footer_contact {
+  display: grid;
+  row-gap: 16px;
+  text-align: start;
+}
+footer .footer_container .footer_contact h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #A55C30;
+  margin-bottom: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-self: center;
+}
+footer .footer_container .footer_contact p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 230px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-self: center;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+footer .footer_container .footer_contact .address::before {
+  content: url(/imgs/spot.svg);
+  height: 25px;
+  width: 25px;
+}
+footer .footer_container .footer_contact .phone::before {
+  content: url(/imgs/phone.svg);
+  height: 25px;
+  width: 25px;
+  margin-left: 4px;
+}
+footer .footer_container .footer_contact .email::before {
+  content: url(/imgs/email.svg);
+  height: 25px;
+  width: 25px;
+  margin-left: 4px;
+}
+footer .footer_container .social {
+  display: flex;
+  gap: 32px;
+  justify-self: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .copyrights {
+  font-weight: 300;
+  font-size: 12px;
+  width: 310px;
+  text-align: center;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 10px 0 34px 0;
+  border-top: 1px solid gray;
 }
 
 .service {
@@ -575,6 +699,19 @@ footer .news_letter h3 {
   font-size: 14px;
 }
 
+button {
+  width: 161px;
+  height: 60px;
+  justify-self: center;
+  background: #A55C30;
+  color: white;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  border: 0;
+  text-transform: uppercase;
+}
+
 #contact h3 {
   text-align: center;
   font-family: "Lora";
@@ -630,18 +767,6 @@ footer .news_letter h3 {
 }
 #contact form ::placeholder {
   opacity: 0.6;
-}
-#contact form button {
-  width: 161px;
-  height: 60px;
-  justify-self: center;
-  background: #A55C30;
-  color: white;
-  font-family: "Lato";
-  font-weight: 700;
-  font-size: 18px;
-  border: 0;
-  text-transform: uppercase;
 }
 #contact form .form_details {
   height: 204px;
