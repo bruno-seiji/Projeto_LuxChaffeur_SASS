@@ -264,6 +264,7 @@ table {
 header {
   background-color: #E5E5E5;
   display: flex;
+  width: 100%;
   box-sizing: border-box;
   padding: 16px;
   justify-content: space-between;
@@ -286,6 +287,7 @@ header h1 span {
 #intro {
   position: relative;
   background-color: #E5E5E5;
+  width: 100%;
 }
 #intro p {
   margin: 48px auto auto 31px;
@@ -302,6 +304,7 @@ header h1 span {
 }
 #intro img {
   margin-top: 113px;
+  width: 100%;
 }
 
 #about {
@@ -414,6 +417,39 @@ header h1 span {
   gap: 32px;
   box-sizing: border-box;
   padding: 64px 0 50px 0;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  row-gap: 88px;
+}
+footer h2 {
+  margin-left: 15px;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #A55C30;
+  font-style: italic;
+}
+footer h2 span {
+  font-weight: 700;
+  font-style: normal;
+}
+footer p {
+  font-weight: 300;
+  font-size: 16px;
+  width: 250px;
+}
+footer .news_letter h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #A55C30;
 }
 
 .service {
