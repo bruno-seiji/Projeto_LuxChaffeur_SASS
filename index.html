@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,8 +23,22 @@
   <body>
     <header>
       <h1><span>Lux</span>Chaffeur</h1>
-      <img src="/imgs/menu.svg" alt="" srcset="" />
+      <img src="/imgs/menu.svg" alt="" srcset="" onclick="show_menu()" />
+
+      <nav class="side_menu">
+        <ul>
+          <li><a href="#intro" onclick="close_menu()">Home</a></li>
+          <li><a href="#about" onclick="close_menu()">About</a></li>
+          <li><a href="#services" onclick="close_menu()">Services</a></li>
+          <li><a href="#fleet" onclick="close_menu()">Fleet</a></li>
+          <li><a href="#contact" onclick="close_menu()">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <div class="backup_button" onclick="scroll_to_start()">
+      <img src="/imgs/up-arrow.png" alt="" srcset="" />
+    </div>
 
     <section id="intro">
       <p>Premium and Luxurious Chauffeur Services</p>
@@ -285,9 +302,6 @@
       </p>
     </footer>
     <script src="/imports/scripts/glide.js"></script>
-    <script>
-      new Glide('.glide').mount()
-      new Glide('.glide2').mount()
-    </script>
+    <script src="/imports/scripts/script.js"></script>
   </body>
 </html>

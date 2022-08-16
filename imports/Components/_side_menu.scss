@@ -1,0 +1,48 @@
+.side_menu{
+  background: rgba(12, 12, 12, 0.95);
+  color: white;
+  width: 243px;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  right: -250px;
+  top:64px;
+  box-sizing: border-box;
+  padding-top: 100px ;
+  transition: 0.5s;
+  
+
+
+  ul{
+    display: grid;
+    row-gap: 24px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    
+    li{
+      padding-left: 40px;
+      height: 50px;
+      display: flex;
+      align-items:center;
+      
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    li:hover {
+      background: #C7763E;
+    } 
+    
+  }
+}
+
+.menu_active {
+  right:0;
+  transition: 0.5s;
+}
