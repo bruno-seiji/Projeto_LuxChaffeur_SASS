@@ -24,3 +24,52 @@ header {
     }
   }
 }
+
+@media screen and (min-width: 1440px){
+
+  header {
+    background-color: white;
+    width: 1440px;
+    
+    justify-self: center;
+    box-sizing: border-box;
+    padding: 24px 126px;
+    img {
+      display: none;
+    }
+
+    nav.side_menu {
+      position: static;
+      height: auto;
+      width: fit-content;
+      display: block;
+      padding: 0;
+
+      ul{
+        grid-template-columns: repeat(5,auto);
+        padding: 0;
+        gap:48px;
+        background-color: white;
+        
+
+        li{
+          padding: 0;
+          height: auto;
+          a{
+            color: black;
+          }
+        }
+
+        li:hover {
+          background-color: white;
+          a:hover{
+            color: #F8D7A4;
+          }
+        }
+      }
+    }
+
+  }
+
+
+}

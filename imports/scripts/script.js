@@ -14,9 +14,11 @@ function close_menu() {
 
 window.addEventListener('scroll', () => {
   if (window.scrollY <= 64) {
-    button_start.classList.add('hidden')
+    button_start.classList.remove('animate__fadeInDown')
+    button_start.classList.add('animate__fadeOutUp')
   } else {
-    button_start.classList.remove('hidden')
+    button_start.classList.remove('animate__fadeOutUp')
+    button_start.classList.add('animate__fadeInDown')
   }
 })
 
