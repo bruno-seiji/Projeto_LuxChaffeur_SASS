@@ -7,7 +7,7 @@
   grid-template-rows: repeat(4, auto);
   box-sizing: border-box;
   padding: 36px;
-  row-gap: 50px;
+  gap: 50px;
    
   .service_img{
     width: 700px;
@@ -24,5 +24,24 @@
     line-height: 41px;
     color: #A55C30;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  #services {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    padding: 107px 123px 129px 123px;
+    column-gap: 143px;
+    row-gap: 64px;
+    
+
+    h2{
+      grid-column: span 3;
+      text-align: left;
+      font-size: 48px;
+      line-height: 61px;
+    }
   }
 }

@@ -280,6 +280,10 @@ body {
     height: 100vh;
     display: grid;
   }
+  body header, body section, body footer {
+    width: 1440px;
+    justify-self: center;
+  }
 }
 header {
   background-color: #E5E5E5;
@@ -308,8 +312,6 @@ header h1 span {
 @media screen and (min-width: 1440px) {
   header {
     background-color: white;
-    width: 1440px;
-    justify-self: center;
     box-sizing: border-box;
     padding: 24px 126px;
   }
@@ -434,8 +436,6 @@ header h1 span {
 
 @media screen and (min-width: 1440px) {
   #about {
-    width: 1440px;
-    justify-self: center;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -477,7 +477,7 @@ header h1 span {
   grid-template-rows: repeat(4, auto);
   box-sizing: border-box;
   padding: 36px;
-  row-gap: 50px;
+  gap: 50px;
 }
 #services .service_img {
   width: 700px;
@@ -495,6 +495,23 @@ header h1 span {
   text-align: center;
 }
 
+@media screen and (min-width: 1440px) {
+  #services {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    padding: 107px 123px 129px 123px;
+    -moz-column-gap: 143px;
+         column-gap: 143px;
+    row-gap: 64px;
+  }
+  #services h2 {
+    grid-column: span 3;
+    text-align: left;
+    font-size: 48px;
+    line-height: 61px;
+  }
+}
 #fleet {
   width: 100%;
   height: auto;
@@ -737,6 +754,25 @@ footer .copyrights {
   font-size: 14px;
 }
 
+@media screen and (min-width: 1440px) {
+  .service {
+    width: 303px;
+  }
+  .service img {
+    width: 104px;
+    height: 104px;
+  }
+  .service h4 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 48px;
+  }
+  .service p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+  }
+}
 .card {
   background-color: white;
   box-sizing: border-box;
