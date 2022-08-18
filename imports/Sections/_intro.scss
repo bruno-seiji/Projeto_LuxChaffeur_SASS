@@ -2,6 +2,7 @@
   position: relative;
   background-color: #E5E5E5;
   width: 100%;
+  height: 700px;
    p{
     margin: 48px auto auto 31px;
     width: 229px;
@@ -18,8 +19,45 @@
 
   img{
     margin-top: 113px;
-    width: 100%;
+    width: 937px;
+    position: absolute;
+    left: -48px;
   }
+}
 
+.back_car {
+  display: none;
+}
 
+@media screen and (min-width: 1440px){
+  #intro {
+    width: 1440px;
+    justify-self: center;
+    z-index: 7;
+    overflow-y: hidden;
+    img{
+      left: auto;
+      right: 0;
+      z-index: 10;
+    }
+    img.back_car {
+      display: block;
+      position: absolute;
+      top: -200px;
+      right: 0;
+      z-index: 5;
+      width: 700px;
+      height: 842px;
+    }
+
+    p{
+      font-size: 56px;
+      line-height: 72px;
+      width: 400px;
+      height: 288px;
+      margin-left: 123px;
+      margin-top: 193px;
+    }
+    
+  }
 }
