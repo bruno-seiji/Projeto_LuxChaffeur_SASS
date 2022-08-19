@@ -1,5 +1,42 @@
-new Glide('.glide').mount()
-new Glide('.glide2').mount()
+const swiper1 = new Swiper('.s1', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 0,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      centeredSlides: false
+    }
+  }
+})
+
+const swiper2 = new Swiper('.s2', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 0,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+})
 
 var side_menu = document.querySelector('.side_menu')
 var button_start = document.querySelector('.backup_button')

@@ -193,72 +193,82 @@ table {
   border-spacing: 0;
 }
 
-#fleet .glide__bullets .glide__bullet--active {
+#fleet .swiper {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#fleet .swiper div.swiper-pagination {
+  position: static;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 94px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+#fleet .swiper div.swiper-pagination span.swiper-pagination-bullet {
+  margin: 0;
+  width: 11px;
+  height: 11px;
+}
+#fleet .swiper div.swiper-pagination .swiper-pagination-bullet-active {
   background-color: #F8D7A4;
 }
-#fleet .glide__bullets .glide__bullet {
-  width: 11px;
-  height: 11px;
-}
-#fleet .glide__bullets {
-  gap: 1rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: static;
-  z-index: 0;
-  bottom: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-  transform: none;
-}
-#fleet .glide__bullet {
-  margin: 0;
-  background-color: #E5E5E5;
-}
-#fleet .glide__slide {
+#fleet .swiper-slide {
   display: flex;
   justify-content: center;
 }
-#fleet .glide {
-  display: grid;
-  gap: 35px;
+#fleet .swiper-button-prev, #fleet .swiper-button-next {
+  display: none;
 }
 
-#testimonials .glide__bullets .glide__bullet--active {
-  background-color: #A55C30;
+#testimonials .swiper {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-#testimonials .glide__bullets .glide__bullet {
+#testimonials .swiper div.swiper-pagination {
+  position: static;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  margin-top: 35px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+#testimonials .swiper div.swiper-pagination span.swiper-pagination-bullet {
+  margin: 0;
   width: 11px;
   height: 11px;
 }
-#testimonials .glide__bullets {
-  gap: 1rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: static;
-  z-index: 0;
-  bottom: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-  transform: none;
+#testimonials .swiper div.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #A55C30;
 }
-#testimonials .glide__bullet {
-  margin: 0;
-  background-color: #E5E5E5;
+#testimonials .swiper-button-prev, #testimonials .swiper-button-next {
+  display: none;
 }
-#testimonials .glide__slide {
-  display: flex;
-  justify-content: center;
-}
-#testimonials .glide2 {
-  display: grid;
-  gap: 33px;
+
+@media screen and (min-width: 1440px) {
+  #fleet .swiper-button-prev, #fleet .swiper-button-next, #testimonials .swiper-button-prev, #testimonials .swiper-button-next {
+    display: block;
+    width: 36px;
+    height: 36px;
+    top: 35%;
+  }
+  #fleet .swiper-button-prev svg, #fleet .swiper-button-next svg, #testimonials .swiper-button-prev svg, #testimonials .swiper-button-next svg {
+    width: 100%;
+    height: 100%;
+  }
+  #fleet .swiper-button-prev svg circle, #fleet .swiper-button-next svg circle, #testimonials .swiper-button-prev svg circle, #testimonials .swiper-button-next svg circle {
+    fill: #F8D7A4;
+  }
+  #fleet .swiper-button-prev::after, #fleet .swiper-button-next::after, #testimonials .swiper-button-prev::after, #testimonials .swiper-button-next::after {
+    content: none;
+  }
 }
 
 html, body {
@@ -280,7 +290,7 @@ body {
     height: 100vh;
     display: grid;
   }
-  body header, body section, body footer {
+  body header, body section, body section#fleet, body footer {
     width: 1440px;
     justify-self: center;
   }
@@ -529,11 +539,7 @@ header h1 span {
   box-sizing: border-box;
   padding: 30px;
 }
-#fleet .glide {
-  margin-bottom: 94px;
-}
-
-.num_info {
+#fleet .num_info {
   background: rgba(35, 34, 34, 0.96);
   box-sizing: border-box;
   display: grid;
@@ -545,6 +551,24 @@ header h1 span {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1440px) {
+  #fleet {
+    padding-bottom: 0;
+  }
+  #fleet h2 {
+    font-size: 56px;
+    line-height: 72px;
+  }
+  #fleet .num_info {
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    -moz-column-gap: 290px;
+         column-gap: 290px;
+    padding: 88px 245px;
+    text-transform: uppercase;
+  }
+}
 #testimonials {
   box-sizing: border-box;
   background-color: #F8D7A4;
@@ -560,6 +584,12 @@ header h1 span {
   text-align: center;
 }
 
+@media screen and (min-width: 1440px) {
+  #testimonials h2 {
+    font-size: 48px;
+    line-height: 61px;
+  }
+}
 #contact {
   background-color: white;
   display: grid;
@@ -783,11 +813,45 @@ footer .copyrights {
   justify-content: center;
   text-align: center;
   box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.1);
-  padding: 23px;
-  width: 283.5px;
-  height: 351px;
+  padding: 47px 23px 17px 23px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   justify-self: center;
   align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+.card img {
+  width: 233px;
+  height: 120px;
+}
+.card .card_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #A55C30;
+  margin: 20px 0 0.25px 0;
+}
+.card .card_car {
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 17px;
+}
+.card .card_description {
+  width: 225px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 24px;
+  text-align: justify;
+}
+.card .luggage, .card .seats {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .span_2 {
@@ -804,6 +868,34 @@ footer .copyrights {
   margin-right: 12px;
 }
 
+@media screen and (min-width: 1440px) {
+  .card {
+    padding: 40px 30px 22px 30px;
+  }
+  .card img {
+    width: 311px;
+    height: 160px;
+  }
+  .card .card_title {
+    font-size: 24px;
+    line-height: 33px;
+    margin-top: 27px;
+  }
+  .card .card_car {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 22px;
+  }
+  .card .card_description {
+    font-size: 12px;
+    margin-bottom: 22px;
+    justify-self: center;
+  }
+  .card .luggage, .card .seats {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
 .numbers {
   font-family: "Noto Sans", sans-serif;
   color: white;
@@ -818,6 +910,18 @@ footer .copyrights {
   font-size: 16px;
 }
 
+@media screen and (min-width: 1440px) {
+  .numbers .number {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 98px;
+  }
+  .numbers .txt {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
 .testimonial {
   background-color: white;
   box-sizing: border-box;
@@ -865,6 +969,12 @@ footer .copyrights {
   font-size: 14px;
 }
 
+@media screen and (min-width: 1440px) {
+  .testimonial {
+    width: 1200px;
+    margin: auto;
+  }
+}
 button {
   width: 161px;
   height: 60px;

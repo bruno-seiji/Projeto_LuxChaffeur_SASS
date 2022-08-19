@@ -14,23 +14,41 @@
     box-sizing: border-box;
     padding: 30px ;
   }
-  .glide {
-    margin-bottom: 94px;
+  .num_info {
+    background: rgba(35, 34, 34, 0.96);
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    width: 349px;
+    justify-self: center;
+    row-gap:72px ;
+    padding: 50px 0 100px 0;
+    text-transform: uppercase;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1440px){
+  
+  #fleet{
+    padding-bottom: 0;
+    h2{
+      font-size: 56px;
+      line-height: 72px;
+    }
+
+    .num_info {
+      justify-content: center;
+      width: 100%;
+      grid-template-columns: auto auto auto;
+      column-gap: 290px;
+      padding: 88px 245px;
+      text-transform: uppercase;
+    }
   }
 }
-
-.num_info {
-  background: rgba(35, 34, 34, 0.96);
-  box-sizing: border-box;
-  display: grid;
-  justify-content: center;
-  width: 349px;
-  justify-self: center;
-  row-gap:72px ;
-  padding: 50px 0 100px 0;
-  text-transform: uppercase;
-}
-
 
 
 

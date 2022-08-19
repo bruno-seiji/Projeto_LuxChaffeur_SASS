@@ -8,11 +8,43 @@
   justify-content: center;
   text-align: center;
   box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.1);
-  padding: 23px;
-  width: 283.5px;
-  height: 351px;
+  padding: 47px 23px 17px 23px;
+  width: fit-content;
+  height: fit-content;
   justify-self: center;
   align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+
+  img{
+    width: 233px;
+    height: 120px;
+  }
+
+  .card_title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A55C30;
+    margin: 20px 0 0.25px 0;
+  }
+  .card_car{
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 17px;
+  }
+  .card_description{
+    width: 225px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 24px;
+    text-align: justify;
+  }
+  .luggage, .seats{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .span_2{
@@ -28,5 +60,36 @@
   content: url(/imgs/luggage.svg);
   margin-right: 12px;
 }
+
+@media screen and (min-width: 1440px){
+  .card{
+    padding: 40px 30px 22px 30px;
+    img{
+      width: 311px;
+      height: 160px;
+    }
+    .card_title{
+      font-size: 24px;
+      line-height: 33px;
+      margin-top: 27px;
+    }
+    .card_car{
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 22px;
+    }
+    .card_description{
+      font-size: 12px;
+      margin-bottom: 22px;
+      justify-self: center;
+    }
+    .luggage, .seats{
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+}
+
 
 

@@ -17,7 +17,7 @@ body {
     height: 100vh;
     display: grid;
   
-    header, section, footer {
+    header, section, section#fleet, footer {
       width: 1440px;
       justify-self: center;
     }

@@ -11,3 +11,18 @@
     font-size: 16px;
   };
 }
+
+@media screen and (min-width: 1440px){
+  .numbers{
+    .number{
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 98px;
+    };
+    .txt{
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+    };
+  }
+}
