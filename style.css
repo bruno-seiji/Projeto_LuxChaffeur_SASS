@@ -275,7 +275,7 @@ html, body {
   overflow-x: hidden;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
 }
 
@@ -324,6 +324,8 @@ header h1 span {
     background-color: white;
     box-sizing: border-box;
     padding: 24px 126px;
+    position: fixed;
+    z-index: 10;
   }
   header img {
     display: none;
@@ -393,6 +395,7 @@ header h1 span {
     justify-self: center;
     z-index: 7;
     overflow-y: hidden;
+    margin-top: 63.9px;
   }
   #intro img {
     left: auto;
@@ -610,6 +613,7 @@ header h1 span {
 @media screen and (min-width: 1440px) {
   #contact {
     padding: 105px 0 100px 0;
+    box-shadow: 0px 2px 4px rgba(214, 217, 223, 0.4);
   }
   #contact h3 {
     font-size: 56px;
@@ -770,6 +774,50 @@ footer .copyrights {
   border-top: 1px solid gray;
 }
 
+@media screen and (min-width: 1440px) {
+  footer div.footer_container {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 30px;
+    -moz-column-gap: 120px;
+         column-gap: 120px;
+    padding: 62px 0 18px 0;
+  }
+  footer div.footer_container .footer_contact {
+    margin-top: 12px;
+  }
+  footer div.footer_container .news_letter {
+    margin-top: 12px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    row-gap: 0;
+  }
+  footer div.footer_container .news_letter h3, footer div.footer_container .news_letter p {
+    grid-column: span 2;
+  }
+  footer div.footer_container .news_letter h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  footer div.footer_container .footer_start {
+    text-align: left;
+  }
+  footer div.footer_container .footer_start p {
+    margin-left: 11px;
+  }
+  footer div.footer_container .social {
+    grid-column-start: 2;
+  }
+  footer div.footer_container .social img {
+    cursor: pointer;
+  }
+  footer .copyrights {
+    width: 1200px;
+  }
+}
 .service {
   display: grid;
   row-gap: 1rem;
