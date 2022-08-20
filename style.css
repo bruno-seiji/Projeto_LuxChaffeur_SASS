@@ -599,7 +599,23 @@ header h1 span {
   box-sizing: border-box;
   padding: 64px 0 50px 0;
 }
+#contact h3 {
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #A55C30;
+}
 
+@media screen and (min-width: 1440px) {
+  #contact {
+    padding: 105px 0 100px 0;
+  }
+  #contact h3 {
+    font-size: 56px;
+    line-height: 72px;
+  }
+}
 button {
   width: 161px;
   height: 60px;
@@ -618,6 +634,7 @@ footer {
   color: white;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
+  display: grid;
 }
 footer .footer_container {
   width: 100%;
@@ -963,16 +980,66 @@ footer .copyrights {
 .testimonial .name {
   font-weight: 700;
   font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 .testimonial .city {
   font-weight: 300;
   font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 1440px) {
   .testimonial {
-    width: 1200px;
+    box-sizing: border-box;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 72px 163px 82px 120px;
     margin: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+    -moz-column-gap: 130px;
+         column-gap: 130px;
+  }
+  .testimonial img {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 160px;
+    height: 160px;
+    align-self: center;
+    margin: 0;
+  }
+  .testimonial div.stars {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    width: 190px;
+    height: 30px;
+    justify-self: center;
+  }
+  .testimonial div.stars img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .testimonial p.txt_testimonial {
+    width: 601px;
+    height: 178px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .testimonial p.city {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .testimonial p.name {
+    font-size: 32px;
+    line-height: 48px;
   }
 }
 button {
@@ -988,13 +1055,6 @@ button {
   text-transform: uppercase;
 }
 
-#contact h3 {
-  text-align: center;
-  font-family: "Lora";
-  font-weight: 700;
-  font-size: 32px;
-  color: #A55C30;
-}
 #contact form {
   display: grid;
   background-color: #E8EAEC;
@@ -1048,6 +1108,17 @@ button {
   height: 204px;
 }
 
+@media screen and (min-width: 1440px) {
+  #contact form {
+    padding: 116px 146px 80px 146px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #contact form input {
+    width: 440px;
+  }
+}
 .side_menu {
   background: rgba(12, 12, 12, 0.95);
   color: white;

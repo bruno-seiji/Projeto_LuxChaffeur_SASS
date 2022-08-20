@@ -6,4 +6,21 @@
   gap: 32px;
   box-sizing: border-box;
   padding: 64px 0 50px 0 ;
+  h3 {
+    text-align: center ;
+    font-family: 'Lora',sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #A55C30;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  #contact{
+    padding: 105px 0 100px 0;
+    h3{
+      font-size: 56px;
+      line-height: 72px;
+    }
+  }
 }

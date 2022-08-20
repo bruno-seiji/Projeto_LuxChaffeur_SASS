@@ -1,14 +1,6 @@
 @import '../Components/button' ;
 
 #contact {
-  h3 {
-    text-align: center ;
-    font-family: 'Lora';
-    font-weight: 700;
-    font-size: 32px;
-    color: #A55C30;
-  }
-
   form{
     display: grid;
     background-color: #E8EAEC ;
@@ -48,6 +40,19 @@
 
     .form_details {
       height: 204px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1440px){
+  #contact{
+    form{
+      padding: 116px 146px 80px 146px;
+      width: fit-content;
+      input {
+        width: 440px;
+      }
     }
   }
 }
