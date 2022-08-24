@@ -217,10 +217,6 @@ table {
 #fleet .swiper div.swiper-pagination .swiper-pagination-bullet-active {
   background-color: #F8D7A4;
 }
-#fleet .swiper-slide {
-  display: flex;
-  justify-content: center;
-}
 #fleet .swiper-button-prev, #fleet .swiper-button-next {
   display: none;
 }
@@ -252,6 +248,10 @@ table {
   display: none;
 }
 
+#fleet .swiper-slide, #testimonials .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (min-width: 1440px) {
   #fleet .swiper-button-prev, #fleet .swiper-button-next, #testimonials .swiper-button-prev, #testimonials .swiper-button-next {
     display: block;
@@ -280,7 +280,8 @@ html, body {
 }
 
 body {
-  background-color: black;
+  background-color: white;
+  line-height: 1;
 }
 
 @media screen and (min-width: 1440px) {
@@ -382,13 +383,23 @@ header h1 span {
   margin-top: 113px;
   width: 937px;
   position: absolute;
-  left: -48px;
 }
 
 .back_car {
   display: none;
 }
 
+@media screen and (max-width: 1439px) and (min-width: 1200px) {
+  #intro p {
+    top: 150px;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 1439px) and (min-width: 900px) {
+  #intro img {
+    right: 0;
+  }
+}
 @media screen and (min-width: 1440px) {
   #intro {
     width: 1440px;
@@ -447,6 +458,11 @@ header h1 span {
   line-height: 24px;
 }
 
+@media screen and (max-width: 1439px) and (min-width: 900px) {
+  #about img {
+    width: 550px;
+  }
+}
 @media screen and (min-width: 1440px) {
   #about {
     display: grid;
@@ -508,6 +524,15 @@ header h1 span {
   text-align: center;
 }
 
+@media screen and (max-width: 1439px) and (min-width: 900px) {
+  #services {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+  }
+  #services h2, #services div:last-child {
+    grid-column: span 2;
+  }
+}
 @media screen and (min-width: 1440px) {
   #services {
     grid-template-rows: repeat(2, auto);
@@ -554,6 +579,17 @@ header h1 span {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1439px) and (min-width: 900px) {
+  #fleet .num_info {
+    justify-content: center;
+    width: 98%;
+    grid-template-columns: auto auto auto;
+    text-transform: uppercase;
+    -moz-column-gap: 20%;
+         column-gap: 20%;
+    padding-top: 100px;
+  }
+}
 @media screen and (min-width: 1440px) {
   #fleet {
     padding-bottom: 0;
@@ -828,6 +864,8 @@ footer .copyrights {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 305px;
+  justify-self: center;
 }
 .service img {
   justify-self: center;
@@ -996,6 +1034,7 @@ footer .copyrights {
   justify-self: center;
   text-align: center;
   box-shadow: 5px 15px 33px rgba(0, 0, 0, 0.1);
+  width: 320px;
 }
 .testimonial p {
   width: 220px;
@@ -1119,6 +1158,9 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+}
+#contact form textarea {
+  resize: none;
 }
 #contact form input::-webkit-calendar-picker-indicator {
   opacity: 100;

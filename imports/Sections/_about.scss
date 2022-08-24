@@ -3,19 +3,19 @@
   padding: 10px 16px 110px 16px;
   box-sizing: border-box;
   text-align: center;
-  img{
-    width: 344px;
-    height: 267px;
-  }
-
-  h2{
-    margin-top: 20px;
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    color: #A55C30;
+    img{
+      width: 344px;
+      height: 267px;
     }
+
+    h2{
+      margin-top: 20px;
+      font-family: 'Lora';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      color: #A55C30;
+      }
 
     p{
       box-sizing: border-box;
@@ -26,6 +26,17 @@
       line-height: 24px;
     }
 }
+
+
+@media screen and (max-width: 1439px) and (min-width: 900px) {
+  #about{
+   img {
+    width: 550px;
+   }
+  }
+}
+
+
 
 @media screen and (min-width: 1440px){
   #about{

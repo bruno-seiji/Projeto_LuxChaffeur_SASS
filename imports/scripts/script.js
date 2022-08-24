@@ -14,6 +14,12 @@ const swiper1 = new Swiper('.s1', {
   },
 
   breakpoints: {
+    900: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      centeredSlides: false
+    },
+
     1440: {
       slidesPerView: 3,
       slidesPerGroup: 3,
@@ -35,6 +41,20 @@ const swiper2 = new Swiper('.s2', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
+  },
+
+  breakpoints: {
+    900: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      centeredSlides: false
+    },
+
+    1440: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      centeredSlides: true
+    }
   }
 })
 

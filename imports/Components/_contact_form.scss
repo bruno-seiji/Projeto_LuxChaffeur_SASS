@@ -19,6 +19,10 @@
       line-height: 19px;
     }
 
+    textarea {
+      resize: none
+    }
+
     input::-webkit-calendar-picker-indicator {
       opacity: 100;
       background: url(/imgs/arrow_input.svg);

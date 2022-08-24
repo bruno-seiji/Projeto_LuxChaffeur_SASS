@@ -21,12 +21,29 @@
     margin-top: 113px;
     width: 937px;
     position: absolute;
-    left: -48px;
+    // left: -48px;
   }
 }
 
 .back_car {
   display: none;
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1200px) {
+  #intro{
+    p{top: 150px;
+      margin-left: 10%;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 900px) {
+  #intro{
+   img {
+    right:0;
+   }
+  }
 }
 
 @media screen and (min-width: 1440px){
