@@ -42,6 +42,7 @@
 
 @media screen and (min-width: 1440px){
   #services {
+    scroll-margin-top: 64px ;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(3, auto);
     justify-content: center;

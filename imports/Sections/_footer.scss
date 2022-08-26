@@ -139,6 +139,85 @@ footer{
   }
 }
 
+@media screen and (max-width: 1439px) and (min-width: 900px) {
+  footer{
+    scroll-margin-top: 64px ;
+    div.footer_container{
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      column-gap: 5%;
+      row-gap: 5%;
+      padding: 62px 20px 18px 20px;
+      box-sizing: border-box;
+      
+      .footer_contact{
+        margin-top: 12px;
+        width: fit-content;
+        p{
+          font-size: 12px;
+        }
+      }
+
+      .news_letter{
+        margin-top: 12px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 1.5%;
+        row-gap: 0;
+        width: 33%;
+        
+        
+          h3,p{
+            grid-column:span 2 ;
+          }
+
+          p{
+            font-size: 12px;
+          }
+
+          h3{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+          }
+
+          input{
+            width: 200px;
+            grid-column: span 2;
+          }
+
+          button {
+            margin-top: 10px;
+            grid-column: span 2;
+          }
+      }
+
+      .footer_start{
+        text-align: left;
+        width: fit-content;
+          
+
+          p{
+            margin-left: 11px;
+            font-size: 12px;
+          }
+      }
+
+      .social{
+        grid-column-start: 2;
+        margin-bottom: 10px;
+        img{
+          cursor: pointer;
+        }
+      }
+    }
+
+    .copyrights{
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (min-width: 1440px){
   footer{
     div.footer_container{

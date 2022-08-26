@@ -396,6 +396,9 @@ header h1 span {
   }
 }
 @media screen and (max-width: 1439px) and (min-width: 900px) {
+  #intro {
+    scroll-margin-top: 64px;
+  }
   #intro img {
     right: 0;
   }
@@ -465,6 +468,7 @@ header h1 span {
 }
 @media screen and (min-width: 1440px) {
   #about {
+    scroll-margin-top: 64px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -535,6 +539,7 @@ header h1 span {
 }
 @media screen and (min-width: 1440px) {
   #services {
+    scroll-margin-top: 64px;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(3, auto);
     justify-content: center;
@@ -592,6 +597,7 @@ header h1 span {
 }
 @media screen and (min-width: 1440px) {
   #fleet {
+    scroll-margin-top: 64px;
     padding-bottom: 0;
   }
   #fleet h2 {
@@ -624,6 +630,9 @@ header h1 span {
 }
 
 @media screen and (min-width: 1440px) {
+  #testimonials {
+    scroll-margin-top: 64px;
+  }
   #testimonials h2 {
     font-size: 48px;
     line-height: 61px;
@@ -648,6 +657,7 @@ header h1 span {
 
 @media screen and (min-width: 1440px) {
   #contact {
+    scroll-margin-top: 64px;
     padding: 105px 0 100px 0;
     box-shadow: 0px 2px 4px rgba(214, 217, 223, 0.4);
   }
@@ -810,6 +820,77 @@ footer .copyrights {
   border-top: 1px solid gray;
 }
 
+@media screen and (max-width: 1439px) and (min-width: 900px) {
+  footer {
+    scroll-margin-top: 64px;
+  }
+  footer div.footer_container {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    row-gap: 5%;
+    padding: 62px 20px 18px 20px;
+    box-sizing: border-box;
+  }
+  footer div.footer_container .footer_contact {
+    margin-top: 12px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer div.footer_container .footer_contact p {
+    font-size: 12px;
+  }
+  footer div.footer_container .news_letter {
+    margin-top: 12px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    -moz-column-gap: 1.5%;
+         column-gap: 1.5%;
+    row-gap: 0;
+    width: 33%;
+  }
+  footer div.footer_container .news_letter h3, footer div.footer_container .news_letter p {
+    grid-column: span 2;
+  }
+  footer div.footer_container .news_letter p {
+    font-size: 12px;
+  }
+  footer div.footer_container .news_letter h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  footer div.footer_container .news_letter input {
+    width: 200px;
+    grid-column: span 2;
+  }
+  footer div.footer_container .news_letter button {
+    margin-top: 10px;
+    grid-column: span 2;
+  }
+  footer div.footer_container .footer_start {
+    text-align: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer div.footer_container .footer_start p {
+    margin-left: 11px;
+    font-size: 12px;
+  }
+  footer div.footer_container .social {
+    grid-column-start: 2;
+    margin-bottom: 10px;
+  }
+  footer div.footer_container .social img {
+    cursor: pointer;
+  }
+  footer .copyrights {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1440px) {
   footer div.footer_container {
     grid-template-columns: auto auto auto;
